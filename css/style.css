@@ -1,0 +1,452 @@
+@font-face {
+    font-family: "GothamPro";
+    src: url('../fonts/GothamPro.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    max-width: 1550px;
+    overflow-x: hidden;
+}
+
+header{
+    font-size: 16px;
+    line-height: 94%;
+    margin-top: 100px;
+}
+
+.topbar__1{
+    display: flex;
+    background: #000;
+    color: #fff;
+}
+
+.section__1 {
+    display: flex;
+    max-width: 955px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list__1 {
+    display: flex;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-left: 24px;
+}
+
+.dream{
+    padding-left: 25px;
+}
+
+.extra{
+    padding-right: 149px;
+    padding-left: 24px;
+}
+
+.section__2 {
+    display: flex;
+    min-height: 54px;
+    min-width: 668px;
+    align-items: center;
+}
+
+.sale{
+    padding-right: 25px;
+    padding-left: 150px;
+}
+
+.comparison{
+    padding-right: 25px;
+}
+
+.favorite{
+    padding-right: 25px;
+}
+
+.image__1{
+    padding-left: 5px;
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+.section__2 section{
+    justify-content: center;
+}
+
+.list__2 {
+    display: flex;
+    list-style: none;
+}
+
+.topbar__2 {
+    display: flex;
+    min-height: 52px;
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.list__3 {
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    gap: 20PX;
+}
+
+.subleaf{
+    display: flex;
+    margin-left: 36px;
+}
+
+.ground{
+    padding-left: 24px;
+}
+
+.services{
+    padding-right: 108px;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 47px;
+    gap: 15px;
+}
+
+.arrow img{
+    border: 1px solid #e3e3e3;
+    background: #e3e3e3;
+    border-radius: 50%;
+}
+
+.shower__info {
+    padding-top: 119px;
+    font-size: 40px;
+    line-height: 50px;
+    padding-left: 24px;
+}
+
+.house {
+    padding-top: 45px;
+    display: flex;
+    font-size: 20px;
+    padding-bottom: 45px;
+    padding-left: 24px;
+    gap: 10px;
+}
+
+.apartment {
+    border: 1px solid #000;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+.mod {
+    border: 1px solid #000;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+.libe{
+    margin-left: 931px;
+    width: 35px;
+    height: 35px;
+}
+
+.blibe{
+    gap: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.content {
+    font-size: 20px;
+}
+
+
+.text__info {
+    padding-left: 24px;
+    line-height: 30px;
+}
+
+.popular {
+    padding-left: 24px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Контейнер для всех карточек */
+.articlee {
+    display: flex;
+    gap: 20px; /* Отступ между карточками */
+    flex-wrap: wrap; /* Чтобы на мелких экранах они переносились, если не влезают */
+    padding-left: 24px; /* Отступ справа для симметрии с padding-left */
+}
+
+/* Сама карточка */
+.article-card {
+    display: flex;
+    flex: 1; /* Карточки будут одинаковой ширины */
+    min-width: 350px; /* Минимальная ширина, чтобы не сжимались в кашу */
+    border: 1px solid #2750D3; /* Серая рамка вокруг карточки */
+    border-radius: 20px; /* Скругление углов всей карточки */
+    overflow: hidden; /* Чтобы картинка не вылезала за скругленные углы */
+    background-color: #fff;
+}
+
+/* Левая текстовая часть внутри карточки */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяет заголовок наверх, а статы — вниз */
+    padding: 24px;
+    flex-grow: 1;
+}
+
+/* Надпись "Гид" */
+.card-content .guide {
+    font-size: 14px;
+    color: #8a8a8a;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Заголовок статьи */
+.card-content h2 {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+/* Блок со статистикой */
+.card-stats {
+    display: flex;
+    gap: 15px; /* Отступ между блоками просмотров/лайков */
+    align-items: center;
+    margin-top: 20px; /* Отодвигаем от заголовка, если текста мало */
+}
+
+/* Элемент статистики (иконка + текст) */
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Отступ между иконкой и цифрой */
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.stat-item img {
+    width: 16px; /* Задай нужный размер иконкам, если они слишком большие */
+    height: auto;
+}
+
+/* Правая часть с картинкой */
+.card-image {
+    width: 40%; /* Картинка будет занимать примерно 40% от ширины карточки */
+    min-width: 150px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Картинка заполнит блок без искажения пропорций */
+    display: block;
+}
+
+footer{
+    color: #fff;
+    background: #000;
+    margin-top: 137px;
+    margin-bottom: 432px;
+    min-height: 531px;
+
+}
+
+.container{
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-top: 190px;
+
+}
+
+.pg{
+    text-transform: none;
+    padding-bottom: 8px;
+    text-align: left;
+    list-style: none;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.pg:first-child{
+    padding-top: 15px;
+}
+
+
+.pg:hover{
+    color: #b3b3b3;
+    transition: 0.5s;
+}
+
+.protect{
+    position: absolute;
+    color: #4f4d4d;
+    align-items: flex-end;
+}
+
+@media (max-width: 1024px) {              /*  для планшетов */
+    header{
+        max-width: 100vw;
+        font-size: 0.6em;
+    }
+    .section__1{
+        display: flex;
+        max-width: 60%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .extra{
+        padding-right: 50%;
+    }
+    
+    .section__2{
+        display: flex;
+        max-width: 50%;
+        align-items: center;
+    }
+    footer{
+        max-width: 100vw;
+    }
+
+    .image__1{
+        max-width: 100vw;
+    }
+    .articlee{
+         max-width: 100vw;            /*не забыть учесть 3 карточку её размеры */
+    }
+    .article-card{
+        display: flex;
+        flex: 0;
+    }
+    .text__info{
+        max-width: 100vw;
+        margin-bottom: 15%;
+    }
+    .house{
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .shower__info{
+        max-width: 100vw;
+        font-size: 1.7em;
+    }
+    .vw{
+        max-height: 50%;
+    }
+    .vh{
+        max-height: 50%;
+    }
+    .libe{
+        
+    }
+    .blibe{
+        margin-left: 20vw;
+        
+    }
+    .container{
+        max-height: 20vh;
+    }
+    .blibe{
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 480px) {                 /* для телефонов */
+    body{
+    justify-content: center;     
+    margin: 0;
+    }
+    header{
+        max-width: 100vw;
+        font-size: 0.2em;
+    }
+    .topbar__1{
+        display: flex;
+    }
+    .section__1{
+        display: flex;
+        max-width: 20%;
+    }
+    .dream{
+        padding-left: 10%;
+    }
+    .list__1{
+        padding-left: 8%;
+    }
+    .extra{
+        padding-left: 8%;
+    }   
+    .sale{
+        padding-left: 17%;
+    }
+    .images__1{
+        width: 1.5%;
+        padding-right: 2px;
+    }
+    .ground{
+        padding-left: 1.2%;
+    }
+    .list__3{
+        gap: 1.5%;
+    }
+    .shower__info{
+        padding-top: 4%;
+        font-size: 1.4em;
+    }
+    .house{
+        padding-top: 0;
+    }
+    .popular{
+        padding-top: 0;
+    }
+    .row{
+        padding-top: 9%;
+        padding-left: 0;
+        font-size: 0.5em;
+    }
+    .pg{
+        font-size: 0.9em;
+    }
+}
